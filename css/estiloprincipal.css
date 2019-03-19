@@ -9,6 +9,7 @@ and open the template in the editor.
 */
 a.submenu{
     padding: 0 0 0 40px;
+    display: none;
 }
 
 #contenedor{
