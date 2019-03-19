@@ -22,6 +22,13 @@ and open the template in the editor.
             <div id="contenido"></div>
         </div>
         
+        <pre>
+            <?php
+            var_dump(session_id());
+            $_SESSION["hm"]="Hola Mundo";
+            ?>
+
+        </pre>
     </body>
     
     <script>
@@ -36,4 +43,6 @@ and open the template in the editor.
             }
          });
     </script>
+    
+    
 </html>

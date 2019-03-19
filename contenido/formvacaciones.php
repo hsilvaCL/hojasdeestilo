@@ -21,18 +21,20 @@ and open the template in the editor.
             <div id="titulo"></div>
             <div id="menu"><?php include('../menu.php');?></div>
                     <div id="contenido">
-                        <form action="../lib/recepcionvacaciones.php" method="get">
+                        <form action="../lib/recepcionvacaciones.php" method="post">
                             Rut: <input id="rut" name="rut" type="text">
                             <br>Nombre: <input id="nombre" name="nombre" type="text">
                             <br>Cargo: <input id="cargo" name="cargo" type="text">
                             <br>Fecha de inicio:<input id="fechaini" name="fechaini" type="text">
-                            <br>Días totales:<input id="diastotales" type="text">
-                            <br>Comentario<textarea id="comentario" rows="7" cols=20>   </textarea>
+                            <br>Días totales:<input id="diastotales" name="diastotales" type="text">
+                            <br>Comentario<textarea id="comentario" name="comentario" rows="7" cols=20>   </textarea>
                             <input type="submit" value="Enviar"  >                     
                         </form>
                     </div>
         </div>
-        
+        <?php
+         if (isset($_SESSION["hm"])) echo $_SESSION["hm"];
+         ?>
     </body>
     <script>
         $("#subvacaciones").show();
