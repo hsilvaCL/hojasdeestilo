@@ -57,8 +57,8 @@ echo "</pre>";
          ?>
     </body>
     <script>
-        $("#subvacaciones").show();
-        $("#subvacaciones").css("display","block");
+        $("[id*=subvacaciones]").show();
+        $("[id*=subvacaciones]").css("display","block");
         $("#subvacaciones").addClass("active");
         
         $("#eliminar").click(function(){

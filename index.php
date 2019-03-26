@@ -34,12 +34,12 @@ and open the template in the editor.
     <script>
         $("#menusolucitudes").click(function(){
             
-            if ($("#subvacaciones").css("display")!="none"){
-                $("#subvacaciones").css("display","none");
+            if ($("[id*=subvacaciones]").css("display")!="none"){
+                $("[id*=subvacaciones]").css("display","none");
             }
             else{
-                $("#subvacaciones").show();
-                $("#subvacaciones").css("display","block");
+                $("[id*=subvacaciones]").show();
+                $("[id*=subvacaciones]").css("display","block");
             }
          });
     </script>
